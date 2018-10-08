@@ -4,6 +4,7 @@ import './normalize.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
 require('typeface-roboto');
 
 ReactDOM.render(<App />, document.getElementById('root'));
