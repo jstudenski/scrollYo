@@ -1,0 +1,6 @@
+.home {
+  text-align: center;
+  padding-top: calc(50vh - 25px); }
+  .home p {
+    color: #fd7364;
+    font-size: 50px; }
