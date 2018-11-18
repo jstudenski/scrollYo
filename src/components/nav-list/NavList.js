@@ -1,7 +1,7 @@
 import React from 'react';
 import NavItem from '../nav-link/NavLink';
 import PropTypes from 'prop-types';
-
+import './navlist.css';
 class NavList extends React.Component {
   constructor(props) {
     super(props);
