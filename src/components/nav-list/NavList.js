@@ -48,9 +48,7 @@ class NavList extends React.Component {
     return (
       <nav style={{ position: this.state.scrollingLock ? 'fixed' : 'relative' }}>
         {this.props.children}
-        <div
-          id="navbar"
-        >
+        <div id="navbar">
           <ul>
             {this.props.pages.map(page => (
               <NavItem
