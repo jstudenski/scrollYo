@@ -33,12 +33,12 @@ class NavItem extends React.Component {
     //   paddingLeft: this.state.color === this.props.linkColor && '10px',
     // };
     //style={style}
-    const { id } = this.props;
+    const { id, text } = this.props;
     return (
       <div>
         <li ref={this.ref}>
           <ScrollTo selector={id}>
-            {this.props.text}
+            {text}
           </ScrollTo>
         </li>
       </div>
