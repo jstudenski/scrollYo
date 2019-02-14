@@ -12,27 +12,27 @@ class NavItem extends React.Component {
   }
 
   componentDidUpdate() {
-
+    const { getLinkColor } = this.props;
+    const { color } = this.state;
     // get the components current size and position
     const DOMRect = this.ref.current.getBoundingClientRect();
     // find the midline
     const midline = DOMRect.top + (DOMRect.height / 2) + window.scrollY;
     // pass the midline to parent function and return link color
-    const newColor = this.props.getLinkColor(midline);
+    const newColor = getLinkColor(midline);
     // if the color is different, set it in the state
-    if (this.state.color !== newColor) {
+    if (color !== newColor) {
       this.setState({ color: newColor });
     }
   }
 
   render() {
-
     // const style = {
     //   color: this.state.color,
     //   borderLeft: this.state.color === this.props.linkColor && '3px solid',
     //   paddingLeft: this.state.color === this.props.linkColor && '10px',
     // };
-    //style={style}
+    // style={style}
     const { id, text } = this.props;
     return (
       <div>
